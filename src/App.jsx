@@ -10,22 +10,22 @@ const title = 'Adopta un perrito'
   const cardData = [
     {
       titulo: 'Canela',
-      imagen: '',
+      imagen: './src/assets/canela.jpg',
       description: 'La perrita mas bonita'
     },
     {
       titulo: 'Minina',
-      imagen: '',
+      imagen: './src/assets/gato.jpg',
       description: 'La gata mas odiosa'
     },
     {
       titulo: 'Choriflai',
-      imagen: '',
+      imagen: './src/assets/perro2.jpg',
       description: 'El perrito inventado'
     },
     {
       titulo: 'Chocolito',
-      imagen: '',
+      imagen: './src/assets/perro3.jpg',
       description: 'El perrito come-helados'
     },
   ]
