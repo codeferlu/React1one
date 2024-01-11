@@ -1,13 +1,16 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import './styles.css'
+
 
 const MyCard = (props) => {
-  const titulo = props.titulo
+  const titulo = props.titulo;
   const imagen = props.imagen;
   const nombre = props.nombre;
   const description = props.description;
 
   return (
+    
     <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src={imagen} />
       <Card.Body>
@@ -18,6 +21,7 @@ const MyCard = (props) => {
         <Button variant="primary">Adoptame</Button>
       </Card.Body>
     </Card>
+  
   );
 };
 

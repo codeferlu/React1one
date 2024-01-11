@@ -11,38 +11,47 @@ const title = 'Adopta un perrito'
     {
       titulo: 'Canela',
       imagen: './src/assets/canela.jpg',
-      description: 'La perrita mas bonita'
+      description: 'La perrita mas bonita',
+      key: '1'
     },
     {
       titulo: 'Minina',
       imagen: './src/assets/gato.jpg',
-      description: 'La gata mas odiosa'
+      description: 'La gata mas odiosa',
+      key: '2'
     },
     {
       titulo: 'Choriflai',
       imagen: './src/assets/perro2.jpg',
-      description: 'El perrito inventado'
+      description: 'El perrito inventado',
+      key: '3'
     },
     {
       titulo: 'Chocolito',
       imagen: './src/assets/perro3.jpg',
-      description: 'El perrito come-helados'
+      description: 'El perrito come-helados',
+      key: '4'
     },
   ]
 
   return (
     <div>
       <Header title={title} />
+      <div className='flexcaja'>
       {cardData.map((card) => (
-        <MyCard
+        
+        <MyCard 
           titulo={card.titulo}
           imagen={card.imagen}
           description={card.description}
+          key={card.key}
         />
+        
       ))}
+      </div>
       <Footer />
     </div>
-  );  // Add closing parenthesis here
+  ); 
 };
 
 export default App;
