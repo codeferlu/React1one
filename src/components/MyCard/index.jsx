@@ -1,5 +1,6 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import Tags from '../Tags';
 import './styles.css'
 
 
@@ -8,6 +9,8 @@ const MyCard = (props) => {
   const imagen = props.imagen;
   const nombre = props.nombre;
   const description = props.description;
+
+  
 
   return (
     
@@ -18,7 +21,7 @@ const MyCard = (props) => {
         <Card.Text>
           {description}
         </Card.Text>
-        <Button variant="primary">Adoptame</Button>
+        <Tags texto={props.texto} color={props.color} />
       </Card.Body>
     </Card>
   
